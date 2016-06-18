@@ -1,0 +1,15 @@
+{
+  "name": "codeiteam",
+  "description": "codeiteam",
+  "main": "app.js",
+  "authors": [
+    "codeiteam"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "index.html",
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "jquery": "~2.1.4",
+  }
+}

@@ -1,0 +1,39 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ahmad/apps/node/bin/node',
+1 verbose cli   '/home/ahmad/apps/node/bin/npm',
+1 verbose cli   'start' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.4
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info prestart codeiteam@0.0.1
+6 info start codeiteam@0.0.1
+7 verbose unsafe-perm in lifecycle true
+8 info codeiteam@0.0.1 Failed to exec start script
+9 verbose stack Error: codeiteam@0.0.1 start: `http-server -a localhost -p 8000 -c-1`
+9 verbose stack spawn ENOENT
+9 verbose stack     at ChildProcess.<anonymous> (/home/ahmad/apps/node/lib/node_modules/npm/lib/utils/spawn.js:17:16)
+9 verbose stack     at emitTwo (events.js:87:13)
+9 verbose stack     at ChildProcess.emit (events.js:172:7)
+9 verbose stack     at maybeClose (internal/child_process.js:818:16)
+9 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+10 verbose pkgid codeiteam@0.0.1
+11 verbose cwd /home/ahmad/Desktop/codeiteam
+12 error Linux 3.13.0-77-generic
+13 error argv "/home/ahmad/apps/node/bin/node" "/home/ahmad/apps/node/bin/npm" "start"
+14 error node v4.2.4
+15 error npm  v2.14.12
+16 error file sh
+17 error code ELIFECYCLE
+18 error errno ENOENT
+19 error syscall spawn
+20 error codeiteam@0.0.1 start: `http-server -a localhost -p 8000 -c-1`
+20 error spawn ENOENT
+21 error Failed at the codeiteam@0.0.1 start script 'http-server -a localhost -p 8000 -c-1'.
+21 error This is most likely a problem with the codeiteam package,
+21 error not with npm itself.
+21 error Tell the author that this fails on your system:
+21 error     http-server -a localhost -p 8000 -c-1
+21 error You can get their info via:
+21 error     npm owner ls codeiteam
+21 error There is likely additional logging output above.
+22 verbose exit [ 1, true ]

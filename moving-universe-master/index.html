@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Road :)</title>
+
+	<link rel="stylesheet" href="assets/bootstrap.css">
+	<link rel="stylesheet" href="assets/animate.css">
+
+
+
+	<style>
+
+	
+
+		body {
+		  font-family: 'Dosis', sans-serif;
+		  font-size: 12px;
+		  overflow: hidden;
+		  margin: 0;
+		  position: relative;
+		  padding: 0;
+		  background: #444;
+		  height: 1100px;
+		}
+
+	
+
+		.page-container {
+		  width: 100%;
+		  height: 100%;
+		  position: absolute;
+		  left: 0;
+		  right: 0;
+		  top: 0;
+		  bottom: 0;
+		  margin: auto;
+		}
+
+
+
+		#canvas {
+		  width: 100%;
+		  height: 100%;
+		  position: relative;
+		}
+
+		#canvas #road {
+		  width: 892px;
+		  height: 892px;
+		  background: url("assets/road.png") no-repeat;
+		  -moz-opacity: 0;
+		  -khtml-opacity: 0;
+		  -webkit-opacity: 0;
+		  opacity: 0;
+		  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+		  filter: alpha(opacity=0);
+		  animation: lefadeIn 1s 3s forwards, rotate-reverse 20s linear infinite;
+		}
+
+		#canvas #planes {
+		  width: 886px;
+		  height: 863px;
+		  background: url("assets/planes.png") no-repeat;
+		  -moz-opacity: 0;
+		  -khtml-opacity: 0;
+		  -webkit-opacity: 0;
+		  opacity: 0;
+		  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+		  filter: alpha(opacity=0);
+		  animation: lefadeIn 1s 3.4s forwards, rotate 29s linear infinite;
+		}
+
+
+
+		#canvas #planes, #canvas #road, #canvas #clouds {
+		  position: absolute;
+		  left: 0;
+		  right: 0;
+		  top: 0;
+		  bottom: 0;
+		  margin: auto;
+		  background-position: center!important;
+		  background-size: contain!important;
+		}
+
+	
+
+		#canvas #clouds {
+		  width: 802px;
+		  height: 834px;
+		  background: url("assets/clouds.png") no-repeat;
+		  -moz-opacity: 0;
+		  -khtml-opacity: 0;
+		  -webkit-opacity: 0;
+		  opacity: 0;
+		  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+		  filter: alpha(opacity=0);
+		  animation: lefadeIn 1s 3.6s forwards, rotate-reverse 25s linear infinite;
+		}
+
+
+	</style>
+</head>
+<body>
+
+			<div class="page-container">
+		                <div id="canvas">
+		                    <div id="planes"></div>
+		                    <div id="road"></div>
+		                    <div id="clouds"></div>
+               			 </div>
+					
+			</div>
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "codeiteam",
+  "version": "0.0.1",
+  "description": "codeiteam",
+  "repository": "to be decided",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "author": "codeiteam",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.7.1",
+    "http-server": "^0.8.5"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+    "start": "http-server -a localhost -p 8000 -c-1"
+  }
+}

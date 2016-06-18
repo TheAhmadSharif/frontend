@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script src="jquery.js"></script>
+
+	<style>
+		#quotes-block {
+			background: url(splash.jpg);
+			height: 1000px;
+		}
+	</style>
+</head>
+<body>
+
+
+		<div id="quotes-block">
+			
+		</div>
+
+
+	
+
+
+	<script>
+		 // Life at Sonia
+
+		jQuery(document).ready(function() {
+			// quotes scroll
+		    var scrollSpeed = 10;
+		    var current = 0;
+		    var direction = 'h';
+
+		    function bgscroll()
+		    {
+		        current -= 1;
+		        jQuery('#quotes-block').css("backgroundPosition", (direction == 'h') ? current+"px 0" : "0 " + current+"px");
+		    }
+		    setInterval(bgscroll, scrollSpeed);
+
+		    // quotes fade
+		    // jQuery('#quote > li').hide();
+		    // jQuery('#quote > li').fadeLoop({ fadeIn: 1000, stay: 5000, fadeOut: 500 });
+		});
+
+
+	</script>
+</body>
+</html>
